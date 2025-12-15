@@ -94,7 +94,7 @@ function initialize() {
       "featureType": "road",
       "elementType": "geometry",
       "stylers": [{
-          "hue": "#ffb600"
+          "hue": "#3393e8"
         },
         {
           "saturation": "100"
@@ -111,7 +111,7 @@ function initialize() {
       "featureType": "road",
       "elementType": "geometry.stroke",
       "stylers": [{
-          "color": "#ffb600"
+          "color": "#3393e8"
         },
         {
           "saturation": "0"
@@ -228,7 +228,7 @@ function initialize() {
   var mapOptions = {
     center: nottingham,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    backgroundColor: "#000",
+    backgroundColor: "#0d213c",
     zoom: 10,
     panControl: !1,
     zoomControl: !0,
