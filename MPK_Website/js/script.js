@@ -263,3 +263,27 @@ jQuery(function ($) {
 
 
 });
+
+const photos = document.querySelectorAll('.photo img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const closeBtn = document.querySelector('.close');
+
+photos.forEach(photo => {
+  photo.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = photo.src;
+    lightboxImg.alt = photo.alt;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+// Klik di luar gambar juga menutup lightbox
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
